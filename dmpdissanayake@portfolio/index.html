@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>@dmpdissanayake_portfolio</title>
+</head>
+<body>
+    <!-- HEADER DESING --> 
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--HOME SECTION DECIGN-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>DMP DISSANAYAKE</h1>
+            <h3>And I'm an <span class="typing">Undergraduate</span></h3>
+            <p>I'm an undergraduate student, pursuing a specialization Degree in BSC (Hons) in information systems in the Faculty of Management Studies at Rajarata University of Sri Lanka.</p>
+            <div class="social-media">
+                 <a href="https://www.linkedin.com/in/dmp-dissanayake-aa62ba218/"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href="mailto:dissanayakedmp94@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                 <a href="https://github.com/DMPDissanayake"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="CV.pdf" class="btn" target="_blank">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="My-photo (1).png" alt="Profile DP">
+        </div>
+    </section>
+
+    <!--ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="photo.png" alt="About pic"> 
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>Motivated and adaptable Information Systems undergraduate pursuing a BSc. Honours in Information Systems (Special) with a solid foundation in leveraging technology to solve complex problems. Quick learner with proven ability to rapidly adapt to new environments and technologies. Skilled in technical problem-solving and eager to apply my academic knowledge and technical skills in a dynamic IT environment.</p>
+            <a href="achievements.html" class="btn">Education & Achievements</a>
+        </div>
+    </section>
+
+    <!--Skills SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My<span> Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>I have learned Java, HTML/CSS, SQL program language from my research in universities. I am looking forward to learn more programming language and I hope to learn the latest programming language coming to the world.</p>
+            </div>
+            <div class="skills-box">
+                <i class="fa-brands fa-dev"></i>
+                <h3>Development Tools</h3>
+                <p>I have learned Github from my research here at universities. I have learned Java F-x, Intellij, Visual Studio Code as another development platform, and I hope to learn the latest development tools coming to the world.</p>
+            </div>
+            <div class="skills-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Graphic Designing</h3>
+                <p>I studied on my own and am well-versed in Adobe editing software. I am proficient in Adobe Illustrator, Premiere Pro, After Effects, and Photoshop. I'm eager to learn more about this program.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Project SECTION -->
+    <section class="project" id="project">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="01.png" alt="web_page">
+                <div class="project-layer">
+                    <h4>Web Page</h4>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="02.png" alt="My_Portfoliyo">
+                <div class="project-layer">
+                    <h4>Tic Tac Toe Game App</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="contact_form.php" method="post" id="contactForm">
+            <div class="input-box_1">
+                <input type="text" placeholder="Full Name" name="name" required >
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email Address" name="email" required >
+                <input type="text" placeholder="Mobile Number" name="number" required >
+            </div>
+            <div class="input-box_1">
+                <input type="text" placeholder="Email Subject" name="subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required ></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img src="image/succes image.png" alt="Success" class="success-icon" >
+                <h2 class="ss">Success!</h2><br>
+                <p class="pp">Message sent successfully!</p><br>
+                <button id="modalOkButton" class="s_btn"><b>OK</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer SECTION -->
+    <footer class="footer">
+        <p class="follow">Follow Me</p>
+        <div class="social-media">
+            <a href="https://github.com/DMPDissanayake"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dmp-dissanayake-aa62ba218/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="dissanayakedmp94@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100004954713504"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <p>&copy; 2024 Portfolio</p>
+    </footer>
+</body>
+</html>
